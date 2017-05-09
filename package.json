@@ -1,0 +1,25 @@
+{
+  "name": "tween-range",
+  "version": "1.0.0",
+  "description": "Simple linear/non-linear range tweener",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup src/index.js --format umd --name tweenRange --output index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mystrdat/tween-range.git"
+  },
+  "author": "mystrdat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mystrdat/tweet-range/issues"
+  },
+  "homepage": "https://github.com/mystrdat/tweet-range#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "rollup": "^0.41.6"
+  }
+}
