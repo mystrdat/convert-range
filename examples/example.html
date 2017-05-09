@@ -38,7 +38,7 @@
         followMan = document.getElementById('follow-man');
   touchMan.addEventListener('mousemove', (e) => {
     followMan.classList.add('active');
-    followMan.style.transform = `translate(${tweenRange([1,300],[-150,150],Math.min(Math.max(e.pageY, 1), 300),'none')}px)`;
+    followMan.style.transform = `translate(${tweenRange([1,300],[-150,150],Math.min(Math.max(e.pageY, 1), 300),'easeInQuad')}px, ${tweenRange([1,300],[-50,75],Math.min(Math.max(e.pageY, 1), 300),'easeOutElastic')}px)`;
   })
   touchMan.addEventListener('mouseout', (e) => {
     followMan.classList.remove('active');
