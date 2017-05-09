@@ -18,7 +18,7 @@ const easings = {
   }
 };
 
-const tweenRange = (from, to, val, easing = 'none') => {
+const tweenRange = (val, from, to, easing = 'none') => {
   const p = (val - from[0]) / (from[1] - from[0]),
         t = Math.min(Math.max(p, 0), 1),
         b = to[0],

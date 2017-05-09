@@ -32,13 +32,13 @@
 
 <div id="follow-man"></div>
 
-<script src="index.js"></script>
+<script src="../index.js"></script>
 <script>
   const touchMan = document.getElementById('touch-man'),
         followMan = document.getElementById('follow-man');
   touchMan.addEventListener('mousemove', (e) => {
     followMan.classList.add('active');
-    followMan.style.transform = `translate(${tweenRange([1,300],[-150,150],Math.min(Math.max(e.pageY, 1), 300),'easeInQuad')}px, ${tweenRange([1,300],[-50,75],Math.min(Math.max(e.pageY, 1), 300),'easeOutElastic')}px)`;
+    followMan.style.transform = `translate(${tweenRange(Math.min(Math.max(e.pageY, 1), 300),[1,300],[-150,150],'easeInQuad')}px, ${tweenRange(Math.min(Math.max(e.pageY, 1), 300),[1,300],[-50,75],'easeOutElastic')}px)`;
   })
   touchMan.addEventListener('mouseout', (e) => {
     followMan.classList.remove('active');
