@@ -1,7 +1,7 @@
 {
   "name": "tween-range",
   "version": "1.0.0",
-  "description": "Simple linear/non-linear range tweener",
+  "description": "Bind event progress to animation range",
   "main": "index.js",
   "scripts": {
     "build": "rollup src/index.js --format umd --name tweenRange --output index.js",
