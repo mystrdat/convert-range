@@ -1,4 +1,4 @@
-const easings = {
+const penner = {
   linear: (t, b, c, d) => {
     return c * t / d + b;
   },
@@ -226,7 +226,7 @@ const tweenRange = (val, from, to, easing = 'linear') => {
         b = to[0],
         c = to[1] - to[0],
         d = 1;
-  return easings[easing](t, b, c, d);
+  return penner[easing](t, b, c, d);
 };
 
 export default tweenRange;
